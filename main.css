@@ -1,0 +1,129 @@
+/* For MA3 Project-Front End Web Design */
+body {
+    color: black;
+    font-size: 95%;
+    background-image: url(images/backgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+#nav { 
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    background-color: black;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+#nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+#nav li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color:rgb(184, 181, 177);
+    border-right: 1px solid #000;
+}
+
+/* (PAGE TITLE) my personal journey through ucf */
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 370%;
+    text-align: center; 
+}
+
+/* (SUBTITLE) by: regan sowell */
+h3 {
+    color: rgb(0, 0, 0);
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 95%;
+    text-align: center;
+}
+  
+/* (SECTION HEADERS) where it all started..etc. */
+h4 {
+    color:rgb(184, 181, 177);
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 150%;
+}
+
+/* Paragraph Text */
+p {
+    color:rgb(184, 181, 177);
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 105%;
+}
+
+/* Image Borders */
+img {
+    border: 5px solid rgb(184, 181, 177);
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 20px;
+  }
+  
+.grid-item {
+    background-color: #000000;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+
+  /* Media Queries-Font Sizes*/
+  @media screen and (max-width: 800px) {
+    .grid-item {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .grid-item {
+        font-size: 20px;
+    }
+  }
+
+
+/* Media Queries-Screen Sizes */
+/* For screens with a width of up to 600px */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* change to 1 column */
+      justify-items: center; /* center the items horizontally */
+    }
+  }
+  
+  /* For screens with a width between 601px and 900px */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* change to 2 columns */
+      justify-items: center; /* center the items horizontally */
+    }
+  }
+  
+  /* For screens with a width of 901px and above */
+  @media only screen and (min-width: 901px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* change to 3 columns */
+      justify-items: center; /* center the items horizontally */
+    }
+  }
+  
